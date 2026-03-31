@@ -1,0 +1,10 @@
+.env
+.credentials/
+*.pyc
+__pycache__/
+watcher.log
+node_modules/
+mcp_servers/*/node_modules/
+*.log
+.venv/
+venv/
