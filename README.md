@@ -104,7 +104,7 @@ AI_Employee/
 ### 1. Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/M-Rayasat/AI_Employee>
 cd AI_Employee
 ```
 
