@@ -1,7 +1,7 @@
 # AI Employee - Autonomous Business Automation System
 
 An intelligent AI-powered employee that autonomously handles business operations including email management, WhatsApp communication, social media, and accounting - all with human-in-the-loop approval workflows.
-
+[AI Employee](1775197147232.jfif)
 ## 🎯 Key Features
 
 ### ✅ Email Automation (Gmail)
