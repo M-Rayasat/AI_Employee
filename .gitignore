@@ -1,10 +1,21 @@
+# WhatsApp Web cache
+.wwebjs_cache/
+.wwebjs_auth/
+
+# Credentials & Environment
 .env
 .credentials/
-*.pyc
+
+# Python
+venv/
+.venv/
 __pycache__/
-watcher.log
+*.pyc
+
+# Node
 node_modules/
 mcp_servers/*/node_modules/
+
+# Logs
 *.log
-.venv/
-venv/
+watcher.log
