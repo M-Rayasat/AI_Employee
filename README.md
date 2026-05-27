@@ -1,8 +1,20 @@
-# AI Employee - Autonomous Business Automation System
+# 🤖 AI Employee — Autonomous Business Automation System
+
+<div align="center">
+
+![AI Employee](assets/1775197147232.jfif)
+
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-16+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Claude AI](https://img.shields.io/badge/Powered%20by-Claude%20AI-D4A27F?style=for-the-badge&logo=anthropic&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+</div>
 
 An intelligent AI-powered employee that autonomously handles business operations including email management, WhatsApp communication, social media, and accounting - all with human-in-the-loop approval workflows.
 
-![AI Employee](1775197147232.jfif)
+---
+
 ## 🎯 Key Features
 
 ### ✅ Email Automation (Gmail)
@@ -80,6 +92,22 @@ AI_Employee/
 │   ├── Company_Handbook.md       # Business rules and guidelines
 │   └── Dashboard.md              # System status dashboard
 │
+├── docs/                         # Documentation
+│   ├── GMAIL_SETUP.md
+│   ├── GMAIL_SETUP_URDU.md
+│   ├── ODOO_SETUP.md
+│   ├── TWITTER_WHATSAPP_SETUP.md
+│   ├── HOW_TO_USE.md
+│   ├── QUICK_START.md
+│   ├── QUICK_REFERENCE.md
+│   ├── HACKATHON_DEMO_GUIDE.md
+│   ├── ACCESS_BLOCKED_FIX.md
+│   ├── ERROR_RECOVERY.md
+│   └── GOLD_TIER_ARCHITECTURE.md
+│
+├── assets/                       # Images and media
+│   └── 1775197147232.jfif
+│
 ├── whatsapp_watcher.js           # Main WhatsApp automation script
 ├── whatsapp_ai_reply.js          # AI reply generator for WhatsApp
 ├── orchestrator.py               # Main orchestrator (manages all watchers)
@@ -105,7 +133,7 @@ AI_Employee/
 ### 1. Clone Repository
 
 ```bash
-git clone <https://github.com/M-Rayasat/AI_Employee>
+git clone https://github.com/M-Rayasat/AI_Employee
 cd AI_Employee
 ```
 
@@ -233,8 +261,6 @@ python watchers/approval_watcher.py
 
 ### Manual Task Processing
 
-Process tasks in `vault/Needs_Action/`:
-
 ```bash
 claude code "Process tasks in vault/Needs_Action/"
 ```
@@ -288,14 +314,11 @@ To reject a task:
 
 ### Example Responses
 
-**Input:** "Invoice kab milega?"
-**AI Reply:** "I'll check your invoice details and send them to you right away. Please give me a moment."
-
-**Input:** "Urgent - need help with project"
-**AI Reply:** "I understand this is urgent. I'm prioritizing this and will respond as quickly as possible."
-
-**Input:** "Thank you for your help"
-**AI Reply:** "You're very welcome! Feel free to reach out if you need anything else."
+| Input | AI Reply |
+|---|---|
+| "Invoice kab milega?" | "I'll check your invoice details and send them to you right away. Please give me a moment." |
+| "Urgent - need help with project" | "I understand this is urgent. I'm prioritizing this and will respond as quickly as possible." |
+| "Thank you for your help" | "You're very welcome! Feel free to reach out if you need anything else." |
 
 ---
 
@@ -303,14 +326,12 @@ To reject a task:
 
 ### Dashboard
 
-Check system status:
 ```bash
 cat vault/Dashboard.md
 ```
 
 ### Logs
 
-View recent activity:
 ```bash
 # Today's logs
 cat vault/Logs/$(date +%Y-%m-%d).log
@@ -322,14 +343,9 @@ ls -la vault/Logs/
 ### Task Status
 
 ```bash
-# Pending tasks
-ls vault/Needs_Action/
-
-# Awaiting approval
-ls vault/Pending_Approval/
-
-# Completed tasks
-ls vault/Done/
+ls vault/Needs_Action/       # Pending tasks
+ls vault/Pending_Approval/   # Awaiting approval
+ls vault/Done/               # Completed tasks
 ```
 
 ---
@@ -355,6 +371,17 @@ Edit watcher files to adjust:
 
 ---
 
+## 📈 Performance
+
+| Component | Metric |
+|---|---|
+| Email detection time | ~2 minutes |
+| WhatsApp response time | < 1 second |
+| AI reply generation | < 500ms |
+| RAM usage per watcher | < 200MB |
+
+---
+
 ## 🛡️ Security
 
 - **Credentials**: All credentials stored in `.credentials/` (gitignored)
@@ -370,7 +397,6 @@ Edit watcher files to adjust:
 ### Gmail Authentication Issues
 
 ```bash
-# Delete token and re-authenticate
 rm .credentials/gmail_token.json
 python watchers/gmail_watcher.py
 ```
@@ -378,7 +404,6 @@ python watchers/gmail_watcher.py
 ### WhatsApp Session Expired
 
 ```bash
-# Re-scan QR code
 node whatsapp_setup.js
 ```
 
@@ -395,19 +420,9 @@ python orchestrator.py
 ### Browser Already Running Error
 
 ```bash
-# Close all Chrome instances
 taskkill /F /IM chrome.exe  # Windows
 pkill chrome                # Linux/Mac
 ```
-
----
-
-## 📈 Performance
-
-- **Email Processing**: ~2 minutes detection time
-- **WhatsApp Response**: Real-time (< 1 second)
-- **AI Reply Generation**: < 500ms
-- **Resource Usage**: Low (< 200MB RAM per watcher)
 
 ---
 
@@ -436,13 +451,6 @@ Contributions welcome! Please read CONTRIBUTING.md for guidelines.
 
 ---
 
-## 📧 Support
-
-For issues and questions:
-- GitHub Issues: [repository-url]/issues
-
----
-
 ## 🙏 Acknowledgments
 
 - Built with [Claude Code](https://claude.ai/code)
@@ -452,4 +460,11 @@ For issues and questions:
 
 ---
 
-**Created By MUHAMMAD RAYASAT**
+<div align="center">
+
+**Created by [Muhammad Rayasat](https://pk.linkedin.com/in/m-rayasat)**
+
+[![GitHub](https://img.shields.io/badge/GitHub-M--Rayasat-181717?style=flat-square&logo=github)](https://github.com/M-Rayasat)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad%20Rayasat-0A66C2?style=flat-square&logo=linkedin)](https://pk.linkedin.com/in/m-rayasat)
+
+</div>
